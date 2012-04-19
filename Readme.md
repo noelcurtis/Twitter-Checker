@@ -2,7 +2,7 @@
 
 Use twitter_checker to poll a Twitter account for certain search terms or Regular Expressions. All strings are compared after being lowercased.
 
-$ruby twitter_checker.rb __"useraccount" "regex to look for"__
+$ruby twitter_checker.rb __useraccount regex to look for__
 
 Examples:
 <pre>
