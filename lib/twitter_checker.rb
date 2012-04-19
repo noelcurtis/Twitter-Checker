@@ -9,7 +9,7 @@ class TwitterChecker
   while true
     # Check the latest Tweet for the requested regular expression
     first_tweet = Twitter.user_timeline(account_name).first.text
-    if first_tweet.downcase.scan(regex_to_match)
+    if first_tweet.downcase.match(regex_to_match)
       puts "#{account_name} just tweeted something that matched \"#{regex_to_match}\": #{first_tweet}"
       system "say #{account_name} just tweeted something that matched your regular expression!"
     end
